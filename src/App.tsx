@@ -97,7 +97,7 @@ function App() {
                 {isFollowing ? "Following" : "Follow"}
               </button>
               
-              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-colors">
+              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
                 <Play size={20} />
                 Play Latest
               </button>
