@@ -1,8 +1,11 @@
-import React, { type ReactElement } from "react";
+import React, { useState } from 'react';
 import { cn } from "@/lib/utils";
 import { Route, Routes } from "react-router-dom";
+import { Music, Calendar, Users, Play, Instagram, Twitter, Youtube, Spotify, Apple, Menu, X } from 'lucide-react';
 
 function App(): ReactElement {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div
       className={cn(
