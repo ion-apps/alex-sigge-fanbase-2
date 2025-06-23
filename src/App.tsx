@@ -39,7 +39,7 @@ function App() {
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4 border-b border-gray-200">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
-          <div className="text-gray-800 font-bold text-xl">Alex Sigge</div>
+          <div className="text-gray-800 font-bold text-xl">Alex & Sigge</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -80,7 +80,7 @@ function App() {
                 <Music size={64} className="text-gray-600" />
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">Alex Sigge</h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">Alex & Sigge</h1>
             <p className="text-lg text-gray-500 mb-8">Music Producer & Artist</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -225,7 +225,7 @@ function App() {
       {/* Footer */}
       <footer className="px-6 py-12 border-t border-gray-200">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-500 mb-4">© 2024 Alex Sigge. All rights reserved.</p>
+          <p className="text-gray-500 mb-4">© 2024 Alex & Sigge. All rights reserved.</p>
           <div className="flex items-center justify-center gap-6">
             <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors text-sm">Privacy Policy</a>
             <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors text-sm">Terms of Service</a>
