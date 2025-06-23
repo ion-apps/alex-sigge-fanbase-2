@@ -81,7 +81,7 @@ function App() {
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">Alex Sigge</h1>
-            <p className="text-xl text-gray-600 mb-8">Music Producer & Artist</p>
+            <p className="text-lg text-gray-500 mb-8">Music Producer & Artist</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <button 
