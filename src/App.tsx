@@ -39,20 +39,20 @@ function App() {
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4 border-b border-gray-200">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
-          <div className="text-black font-bold text-xl">Alex Sigge</div>
+          <div className="text-gray-800 font-bold text-xl">Alex Sigge</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#music" className="text-gray-600 hover:text-black transition-colors">Music</a>
-            <a href="#tour" className="text-gray-600 hover:text-black transition-colors">Tour</a>
-            <a href="#about" className="text-gray-600 hover:text-black transition-colors">About</a>
-            <a href="#contact" className="text-gray-600 hover:text-black transition-colors">Contact</a>
+            <a href="#music" className="text-gray-600 hover:text-gray-800 transition-colors">Music</a>
+            <a href="#tour" className="text-gray-600 hover:text-gray-800 transition-colors">Tour</a>
+            <a href="#about" className="text-gray-600 hover:text-gray-800 transition-colors">About</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-800 transition-colors">Contact</a>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-black p-2"
+            className="md:hidden text-gray-800 p-2"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -62,10 +62,10 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200">
             <div className="px-6 py-4 space-y-4">
-              <a href="#music" className="block text-gray-600 hover:text-black transition-colors">Music</a>
-              <a href="#tour" className="block text-gray-600 hover:text-black transition-colors">Tour</a>
-              <a href="#about" className="block text-gray-600 hover:text-black transition-colors">About</a>
-              <a href="#contact" className="block text-gray-600 hover:text-black transition-colors">Contact</a>
+              <a href="#music" className="block text-gray-600 hover:text-gray-800 transition-colors">Music</a>
+              <a href="#tour" className="block text-gray-600 hover:text-gray-800 transition-colors">Tour</a>
+              <a href="#about" className="block text-gray-600 hover:text-gray-800 transition-colors">About</a>
+              <a href="#contact" className="block text-gray-600 hover:text-gray-800 transition-colors">Contact</a>
             </div>
           </div>
         )}
@@ -80,7 +80,7 @@ function App() {
                 <Music size={64} className="text-gray-600" />
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-black mb-4">Alex Sigge</h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">Alex Sigge</h1>
             <p className="text-xl text-gray-600 mb-8">Music Producer & Artist</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -89,20 +89,20 @@ function App() {
                 className={cn(
                   "flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all",
                   isFollowing 
-                    ? "bg-gray-100 text-black border border-gray-300" 
-                    : "bg-black text-white hover:bg-gray-800"
+                    ? "bg-gray-100 text-gray-800 border border-gray-300" 
+                    : "bg-gray-800 text-white hover:bg-gray-700"
                 )}
               >
                 <Heart size={20} className={isFollowing ? "fill-current" : ""} />
                 {isFollowing ? "Following" : "Follow"}
               </button>
               
-              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gray-800 text-white font-semibold hover:bg-gray-700 transition-colors">
+              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-colors">
                 <Play size={20} />
                 Play Latest
               </button>
               
-              <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-gray-300 text-black hover:bg-gray-50 transition-colors">
+              <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors">
                 <Share2 size={20} />
                 Share
               </button>
@@ -110,19 +110,19 @@ function App() {
 
             {/* Social Links */}
             <div className="flex items-center justify-center gap-6">
-              <a href="#" className="text-gray-400 hover:text-black transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <SpotifyIcon size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-black transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <AppleIcon size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-black transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <Youtube size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-black transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-black transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <Twitter size={24} />
               </a>
             </div>
@@ -133,7 +133,7 @@ function App() {
       {/* Latest Music Section */}
       <section id="music" className="px-6 py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-black mb-8 text-center">Latest Tracks</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Latest Tracks</h2>
           <div className="bg-white border border-gray-200 rounded-lg p-6">
             <div className="space-y-4">
               {latestTracks.map((track, index) => (
@@ -143,7 +143,7 @@ function App() {
                       <Play size={20} className="text-gray-600 ml-1" />
                     </button>
                     <div>
-                      <h3 className="text-black font-semibold">{track.title}</h3>
+                      <h3 className="text-gray-800 font-semibold">{track.title}</h3>
                       <p className="text-gray-500 text-sm">{track.album}</p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ function App() {
       {/* Tour Dates Section */}
       <section id="tour" className="px-6 py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-black mb-8 text-center">Upcoming Shows</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Upcoming Shows</h2>
           <div className="bg-white border border-gray-200 rounded-lg p-6">
             <div className="space-y-4">
               {upcomingShows.map((show, index) => (
@@ -168,7 +168,7 @@ function App() {
                       <Calendar size={20} className="text-gray-600" />
                     </div>
                     <div>
-                      <h3 className="text-black font-semibold">{show.venue}</h3>
+                      <h3 className="text-gray-800 font-semibold">{show.venue}</h3>
                       <p className="text-gray-500 text-sm">{show.city}</p>
                       <p className="text-gray-500 text-sm">{new Date(show.date).toLocaleDateString()}</p>
                     </div>
@@ -201,21 +201,21 @@ function App() {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
                 <Users size={32} className="text-gray-600" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-2">2.5M+</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">2.5M+</h3>
               <p className="text-gray-500">Monthly Listeners</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
                 <Music size={32} className="text-gray-600" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-2">50M+</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">50M+</h3>
               <p className="text-gray-500">Total Streams</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
                 <Calendar size={32} className="text-gray-600" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-2">25+</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">25+</h3>
               <p className="text-gray-500">Shows This Year</p>
             </div>
           </div>
