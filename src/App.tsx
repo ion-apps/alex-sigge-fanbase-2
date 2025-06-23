@@ -103,7 +103,7 @@ function App() {
               </button>
               
               <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors">
-                <Share2 size={20} />
+                <Share2 size={20} className="text-gray-500" />
                 Share
               </button>
             </div>
