@@ -35,7 +35,7 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
@@ -75,13 +75,13 @@ function App() {
       <section className="relative px-6 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-pink-400 to-purple-600 p-1">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-gray-600 to-slate-700 p-1">
               <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
                 <Music size={64} className="text-white" />
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Alex Sigge</h1>
-            <p className="text-xl text-white/80 mb-8">Electronic Music Producer & Artist</p>
+            <p className="text-xl text-white/80 mb-8">Music Producer & Artist</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <button 
@@ -90,14 +90,14 @@ function App() {
                   "flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all",
                   isFollowing 
                     ? "bg-white/20 text-white border border-white/30" 
-                    : "bg-white text-purple-900 hover:bg-white/90"
+                    : "bg-white text-gray-900 hover:bg-white/90"
                 )}
               >
                 <Heart size={20} className={isFollowing ? "fill-current" : ""} />
                 {isFollowing ? "Following" : "Follow"}
               </button>
               
-              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors">
+              <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-600 text-white font-semibold hover:bg-slate-700 transition-colors">
                 <Play size={20} />
                 Play Latest
               </button>
@@ -177,10 +177,10 @@ function App() {
                     className={cn(
                       "px-6 py-2 rounded-full font-semibold transition-colors",
                       show.status === "Sold Out" 
-                        ? "bg-red-500/20 text-red-300 cursor-not-allowed"
+                        ? "bg-gray-500/20 text-gray-300 cursor-not-allowed"
                         : show.status === "Few Left"
-                        ? "bg-yellow-500/20 text-yellow-300 hover:bg-yellow-500/30"
-                        : "bg-green-500/20 text-green-300 hover:bg-green-500/30"
+                        ? "bg-slate-500/20 text-slate-300 hover:bg-slate-500/30"
+                        : "bg-slate-600/20 text-slate-300 hover:bg-slate-600/30"
                     )}
                     disabled={show.status === "Sold Out"}
                   >
